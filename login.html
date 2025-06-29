@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillX Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h2>Login to SkillX</h2>
+
+    <form action="/login" method="post">
+      <!-- Username field -->
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <!-- Password field -->
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <!-- Remember me and Forgot password -->
+      <div class="extras">
+        <label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <a href="/forgot-password">Forgot password?</a>
+      </div>
+
+      <!-- Login button -->
+      <button type="submit">Login</button>
+
+      <!-- Signup link -->
+      <p class="signup-text">
+        Don't have an account? <a href="/signup">Sign up</a>
+      </p>
+    </form>
+  </div>
+
+</body>
+</html>
